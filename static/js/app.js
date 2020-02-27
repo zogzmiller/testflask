@@ -2,9 +2,7 @@ var html = d3.select('html').style('background-color', 'grey')
 
 var body = d3.select('body').style('background-color', 'grey')
 
-fetch('/API_endpoint')
-    .then(data => data.json())
-    .then(json => console.log(json));
+d3.json('/API_endpoint').then(json => console.log(json));
 
 var width = parseInt(d3.select("#graph_1").style("width"));
 

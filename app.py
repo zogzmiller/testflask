@@ -35,10 +35,6 @@ def api_call():
 
 @app.route("/API_endpoint", methods=['GET'])
 def index():
-    # @after_this_request
-    # def add_header(response):
-    #     response.headers['Access-Control-Allow-Origin'] = '*'
-    #     return response
     singledocument = mongo.db.fruits_db.find({})
     data = []
     for x in singledocument:

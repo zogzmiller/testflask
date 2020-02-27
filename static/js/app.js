@@ -2,7 +2,7 @@ var html = d3.select('html').style('background-color', 'grey')
 
 var body = d3.select('body').style('background-color', 'grey')
 
-fetch('http://127.0.0.1:5000/API_endpoint')
+fetch('/API_endpoint')
     .then(data => data.json())
     .then(json => console.log(json));
 
